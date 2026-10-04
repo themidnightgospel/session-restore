@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Adds documentation, support, privacy policy and license links for the directory listing, and a privacy policy.
+
 ## 0.1.1
 
 - Adds the directory listing icon.
