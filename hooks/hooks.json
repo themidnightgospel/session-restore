@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe",
+            "args": ["-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-File", "${CLAUDE_PLUGIN_ROOT}/scripts/tracker.ps1", "start"],
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe",
+            "args": ["-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-File", "${CLAUDE_PLUGIN_ROOT}/scripts/tracker.ps1", "end"],
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

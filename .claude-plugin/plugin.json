@@ -1,0 +1,14 @@
+{
+  "name": "session-restore",
+  "displayName": "Session Restore",
+  "version": "0.1.0",
+  "description": "Reopen the Claude Code sessions you had open before a reboot or a closed terminal, each in its own Windows Terminal tab.",
+  "author": {
+    "name": "themidnightgospel",
+    "url": "https://github.com/themidnightgospel"
+  },
+  "homepage": "https://github.com/themidnightgospel/session-restore",
+  "repository": "https://github.com/themidnightgospel/session-restore",
+  "license": "MIT",
+  "keywords": ["sessions", "resume", "restore", "reboot", "windows", "windows-terminal"]
+}

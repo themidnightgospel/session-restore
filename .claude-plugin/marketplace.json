@@ -1,0 +1,15 @@
+{
+  "name": "session-restore",
+  "owner": {
+    "name": "themidnightgospel",
+    "url": "https://github.com/themidnightgospel"
+  },
+  "description": "Reopen your Claude Code sessions after a reboot or a closed terminal (Windows).",
+  "plugins": [
+    {
+      "name": "session-restore",
+      "source": "./",
+      "description": "Reopen the Claude Code sessions you had open before a reboot or a closed terminal, each in its own Windows Terminal tab."
+    }
+  ]
+}
