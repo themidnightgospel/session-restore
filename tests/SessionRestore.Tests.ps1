@@ -149,7 +149,8 @@ Describe 'Get-ResumingCommandLines' {
         $shell = Start-Process cmd.exe -ArgumentList '/c', 'ping -n 60 127.0.0.1 >nul & rem claude --resume other' -WindowStyle Hidden -PassThru
         try {
             Start-Sleep -Milliseconds 500
-            $lines = Get-ResumingCommandLines
+            # @(): with a single command line, -match would answer true or false instead of filtering.
+            $lines = @(Get-ResumingCommandLines)
             $lines -match 'being-resumed' | Should -Not -BeNullOrEmpty
             $lines -match 'resume other' | Should -BeNullOrEmpty
         }
